@@ -2,7 +2,7 @@ package br.com.simplepass.loadingbuttonsample
 
 import android.animation.ObjectAnimator
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
+import android.support.v7.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_second.*
 
 class SecondActivity : AppCompatActivity() {

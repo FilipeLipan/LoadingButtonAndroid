@@ -4,6 +4,7 @@ import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
 import android.animation.ObjectAnimator
 import android.animation.ValueAnimator
+import android.arch.lifecycle.LifecycleObserver
 import android.content.Context
 import android.content.res.TypedArray
 import android.graphics.Bitmap
@@ -12,10 +13,9 @@ import android.graphics.Rect
 import android.graphics.drawable.ColorDrawable
 import android.graphics.drawable.Drawable
 import android.graphics.drawable.GradientDrawable
+import android.support.v4.content.ContextCompat
 import android.util.AttributeSet
 import android.view.View
-import androidx.core.content.ContextCompat
-import androidx.lifecycle.LifecycleObserver
 import br.com.simplepass.loadingbutton.R
 import br.com.simplepass.loadingbutton.animatedDrawables.CircularProgressAnimatedDrawable
 import br.com.simplepass.loadingbutton.animatedDrawables.CircularRevealAnimatedDrawable

@@ -1,16 +1,16 @@
 package br.com.simplepass.loadingbutton.customViews
 
 import android.animation.AnimatorSet
+import android.arch.lifecycle.Lifecycle
+import android.arch.lifecycle.OnLifecycleEvent
 import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.Canvas
 import android.graphics.Rect
 import android.graphics.drawable.Drawable
+import android.support.v4.content.ContextCompat
+import android.support.v7.widget.AppCompatImageButton
 import android.util.AttributeSet
-import androidx.appcompat.widget.AppCompatImageButton
-import androidx.core.content.ContextCompat
-import androidx.lifecycle.Lifecycle
-import androidx.lifecycle.OnLifecycleEvent
 import br.com.simplepass.loadingbutton.animatedDrawables.CircularProgressAnimatedDrawable
 import br.com.simplepass.loadingbutton.animatedDrawables.CircularRevealAnimatedDrawable
 import br.com.simplepass.loadingbutton.animatedDrawables.ProgressType

@@ -10,8 +10,8 @@ import android.graphics.drawable.RippleDrawable
 import android.graphics.drawable.StateListDrawable
 import android.os.Build
 import android.view.ContextThemeWrapper
-import androidx.lifecycle.LifecycleObserver
-import androidx.lifecycle.LifecycleOwner
+import android.arch.lifecycle.LifecycleObserver
+import android.arch.lifecycle.LifecycleOwner
 
 internal fun parseGradientDrawable(drawable: Drawable): GradientDrawable =
     when (drawable) {
@@ -53,6 +53,5 @@ internal fun Context.addLifecycleObserver(observer: LifecycleObserver) {
     when {
         this is LifecycleOwner -> this.lifecycle.addObserver(observer)
         this is ContextThemeWrapper -> this.baseContext.addLifecycleObserver(observer)
-        this is androidx.appcompat.view.ContextThemeWrapper -> this.baseContext.addLifecycleObserver(observer)
     }
 }
