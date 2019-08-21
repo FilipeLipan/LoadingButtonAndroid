@@ -168,6 +168,7 @@ open class CircularProgressButton : AppCompatButton, ProgressButton {
     @OnLifecycleEvent(Lifecycle.Event.ON_DESTROY)
     fun dispose() {
         if (presenter.state != State.BEFORE_DRAW) {
+            saveInitialState()
             morphAnimator.disposeAnimator()
             morphRevertAnimator.disposeAnimator()
         }
